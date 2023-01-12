@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <title>Calculadora del amor</title>
+</head>
+
+<body>
+
+    <h2 id="titulo">Calculadora del amor</h2>
+
+    <div class="contenedorParrafo">
+        <p class="parrafo">Recuerda escribir tanto el nombre como el apellido para que el cálculo se haga correctamente.
+            <br>
+            La prueba del amor calcula las posibilidades de que su amor tenga éxito como porcentaje. 
+            <br>
+            ¡Encuentra nuestras
+            oportunidades! Pero recuerde, todo es inesperado cuando se trata de amor y no podemos garantizar el éxito
+        </p>
+
+        <p class="parrafoMobile">La prueba del amor calcula las posibilidades de que su amor tenga éxito como
+            porcentaje.
+            Pero recuerde, todo es inesperado cuando se trata de amor y no podemos garantizar el éxito
+        </p>
+    </div>
+
+    <div class="calculaTuAmor">
+        <div class="nombreUno">
+            Ingresa tú nombre * <br>
+            <input id="inputUno" type="text">
+        </div>
+
+        <br>
+
+        <h3 class="signoMas">+</h3>
+
+        <br>
+
+        <div class="nombreDos">
+            Nombre de tu posible amor * 
+            <br>
+            <input id="inputDos" type="text">
+        </div>
+
+        <br>
+
+        <button id="boton" onclick="calcular()">CALCULAR</button>
+        <br>
+
+    </div>
+    <br>
+    <br>
+    <h4 id="porcentaje"></h4>
+    <h4 id="resultado"></h4>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html body {
+    background-color: #F0C1D6;
+}
+
+#titulo {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    margin: 40px auto;
+    font-family: 'Tangerine', cursive;
+}
+
+.contenedorParrafo {
+    width: 95%;
+    text-align: center;
+    margin: 0px 22px;
+}
+
+.parrafo {
+    display: none;
+}
+
+.parrafoMobile {
+    font-family: 'Roboto Flex';
+    font-size: 15px;
+    width: 95%;
+}
+
+.calculaTuAmor {
+    margin: 80px 30px 50px 20px;
+    border-radius: 10px;
+    height: 285px;
+    background: rgba(255, 255, 255, 1);
+    border-top: solid 40px #f03687;
+}
+
+.nombreUno {
+    width: 100%;
+    margin: 5% 5%;
+}
+
+.nombreDos {
+    width: 100%;
+    margin: 0% 5%;
+}
+
+#inputUno {
+    width: 90%;
+    height: 22px;
+    margin-top: 10px;
+}
+
+.signoMas {
+    display: none;
+}
+
+#inputDos {
+    width: 90%;
+    height: 22px;
+    margin-top: 10px;
+}
+
+#boton {
+    font-family: 'roboto flex';
+    float: right;
+    margin: 15px 12px 0px 0px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    background-color: #F03687;
+}
+
+.campoObligatorio {
+    display: none;
+}
+
+@media (min-width: 780px) {
+    .parrafo {
+        display: block;
+        width: 640px;
+        margin: 15px auto;
+    }
+
+    .parrafoMobile {
+        display: none;
+    }
+
+    .contenedorParrafo {
+        width: 100%;
+        text-align: center;
+        margin: 0px 0px;
+    }
+
+    .nombreUno{
+        width: 270%;
+        margin: 23% 20%;
+    }
+
+    .signoMas{
+        display: block;
+        margin: 48px 0px 0px 65px;
+    }
+
+    .nombreDos{
+        width: 270%;
+        margin: 23% -90%;
+    }
+
+    .calculaTuAmor {
+        width: 616px;
+        margin: 90px auto;
+        height: 156px;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    #boton{
+        margin: 43px 31px 0px 0px;
+    }
+
+    .campoObligatorio{
+        display: grid;
+        width: 300px;
+        margin-top: -13px;
+        font-family: 'Roboto Flex';
+    }
+}
