@@ -11,18 +11,23 @@ function calcular() {
     let nombreDos = document.getElementById("inputDos").value
 
     if ((nombreUno == '') || (nombreDos == '')) {
-        document.getElementById("resultado").innerHTML="Error, debe completar ambos campos."
+        alert(document.getElementById("resultado").innerHTML="Error, debe completar ambos campos.")
+        console.log(nombreUno + "Soy nombre Uno")
+        console.log(nombreDos + "Soy nombre dos")
     } else{
         fetch('https://love-calculator.p.rapidapi.com/getPercentage?sname=' + nombreUno + '&fname=' + nombreDos + '', options)
         .then(response => response.json())
         .then(response => {
-            document.getElementById("porcentaje").innerHTML = response.percentage + "% de compatibilidad"
+            document.getElementById("porcentaje").innerHTML = response.percentage + "%"
+            ocultar()
+            mostrar()
+            cambiarFondo(response.percentage)
             // traducir(response.result)
+            // parametros(nombreUno)
         }
         )
         .catch(err => console.error(err));
     }
-
 }
 
 function traducir(texto) {
@@ -38,4 +43,36 @@ function traducir(texto) {
         .then(response => response.json())
         .then(response => document.getElementById("resultado").innerHTML = response.responseData.translatedText)
         .catch(err => console.error(err));
+}
+
+function ocultar() {
+    document.getElementById("container").style.display = "block"
+    document.getElementById("resultado").style.display = "none"
+    document.getElementById("ocultos").style.display = "none"
+}
+
+function mostrar() {
+    document.getElementById("ocultos").style.display = "block"
+    document.getElementById("container").style.display = "none"
+}
+
+function cambiarFondo(porcentaje) {
+    if (porcentaje > 50) {
+        document.querySelector("html").style.backgroundImage = "url('./img/FondoCorazones.png')"
+        document.getElementById("corazonRosa").style.display = "block"
+        document.getElementById("otraVez").style.backgroundColor = "#F03687"
+    }else{
+        document.querySelector("html").style.backgroundImage = "url('./img/FondoNegativo.png')"
+        document.getElementById("corazonAzul").style.display = "block"
+        document.getElementById("otraVez").style.backgroundColor = "#2B0E68"
+    }
+}
+
+function volver() {
+   
+    
+}
+
+function parametros(nombre) {
+    console.log("Valor de nombre uno:" + nombre)
 }

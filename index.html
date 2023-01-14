@@ -14,51 +14,64 @@
 
 <body>
 
-    <h2 id="titulo">Calculadora del amor</h2>
+    <div id="container">
+        <h2 id="titulo">Calculadora del amor</h2>
 
-    <div class="contenedorParrafo">
-        <p class="parrafo">Recuerda escribir tanto el nombre como el apellido para que el cálculo se haga correctamente.
-            <br>
-            La prueba del amor calcula las posibilidades de que su amor tenga éxito como porcentaje. 
-            <br>
-            ¡Encuentra nuestras
-            oportunidades! Pero recuerde, todo es inesperado cuando se trata de amor y no podemos garantizar el éxito
-        </p>
+        <div class="contenedorParrafo">
+            <p class="parrafo">Recuerda escribir tanto el nombre como el apellido para que el cálculo se haga
+                correctamente.
+                <br>
+                La prueba del amor calcula las posibilidades de que su amor tenga éxito como porcentaje.
+                <br>
+                ¡Encuentra nuestras
+                oportunidades! Pero recuerde, todo es inesperado cuando se trata de amor y no podemos garantizar el
+                éxito
+            </p>
 
-        <p class="parrafoMobile">La prueba del amor calcula las posibilidades de que su amor tenga éxito como
-            porcentaje.
-            Pero recuerde, todo es inesperado cuando se trata de amor y no podemos garantizar el éxito
-        </p>
-    </div>
-
-    <div class="calculaTuAmor">
-        <div class="nombreUno">
-            Ingresa tú nombre * <br>
-            <input id="inputUno" type="text">
+            <p class="parrafoMobile">La prueba del amor calcula las posibilidades de que su amor tenga éxito como
+                porcentaje.
+                Pero recuerde, todo es inesperado cuando se trata de amor y no podemos garantizar el éxito
+            </p>
         </div>
 
-        <br>
+        <div class="calculaTuAmor">
+            <div class="calculadora">
+                <img class="calculadoraTitulo" src="./img/Calculadora.png" alt="">
+                <p class="parrafoCalculadora">Calcula tu amor</p>
+            </div>
+            <div class="nombreUno">
+                Ingresa tú nombre * <br>
+                <input id="inputUno" type="text">
+            </div>
 
-        <h3 class="signoMas">+</h3>
-
-        <br>
-
-        <div class="nombreDos">
-            Nombre de tu posible amor * 
             <br>
-            <input id="inputDos" type="text">
+
+            <h3 class="signoMas">+</h3>
+
+            <br>
+
+            <div class="nombreDos">
+                Nombre de tu posible amor *
+                <br>
+                <input id="inputDos" type="text">
+            </div>
+
+            <br>
+
+            <button id="boton" onclick="calcular()">CALCULAR</button>
+            <br>
+
         </div>
-
-        <br>
-
-        <button id="boton" onclick="calcular()">CALCULAR</button>
-        <br>
-
     </div>
-    <br>
-    <br>
-    <h4 id="porcentaje"></h4>
+
+    <div id="ocultos">
+        <img id="corazonRosa" src="./img/CorazonRosa.png" alt="">
+        <img id="corazonAzul" src="./img/CorazonAzul.png" alt="">
+        <h4 id="porcentaje"></h4>
+        <button id="otraVez" onclick="volver()">OTRA VEZ</button>
+    </div>
     <h4 id="resultado"></h4>
+
 
 
     <script src="./index.js"></script>

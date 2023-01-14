@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-html body {
+html{
     background-color: #F0C1D6;
 }
 
@@ -39,9 +39,24 @@ html body {
     border-top: solid 40px #f03687;
 }
 
+.calculadora{
+    margin-top: -39px;
+}
+
+.calculadoraTitulo{
+    width: 24px;
+    margin: 5px 0px 0px 16px;
+}
+
+.parrafoCalculadora{
+    margin: -28px 0px 0px 55px;
+    font-family: 'Roboto Flex';
+    color: #FFFFFF;
+}
+
 .nombreUno {
     width: 100%;
-    margin: 5% 5%;
+    margin: 15% 5% 0% 5%;
 }
 
 .nombreDos {
@@ -81,6 +96,47 @@ html body {
     display: none;
 }
 
+#ocultos{
+    width: 100%;
+    text-align: center;
+    margin-top: 130px;
+    display: none;
+}
+
+#corazonRosa{
+    width: 200px;
+    position: relative;
+    display: none;
+    margin: 0px auto;
+}
+
+#corazonAzul{
+    width: 200px;
+    position: relative;
+    display: none;
+    margin: 0px auto;
+}
+
+#porcentaje{
+    position: relative;
+    margin-top: -150px;
+    font-size: 64px;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 80px;
+    font-family: 'Italianno';
+}
+
+#otraVez{
+    padding: 10px;
+    margin-top: 170px;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Rufina';
+    color: #FFFFFF;
+    background-color: #F03687;
+}
+
 @media (min-width: 780px) {
     .parrafo {
         display: block;
@@ -98,19 +154,24 @@ html body {
         margin: 0px 0px;
     }
 
+    .parrafoCalculadora{
+        margin: -28px 0px 0px 58px;
+        width: 120px;
+    }
+
     .nombreUno{
-        width: 270%;
-        margin: 23% 20%;
+        width: 350%;
+        margin: 56% -237%;
     }
 
     .signoMas{
         display: block;
-        margin: 48px 0px 0px 65px;
+        margin: 59px 0px 0px -47px;
     }
 
     .nombreDos{
-        width: 270%;
-        margin: 23% -90%;
+        width: 380%;
+        margin: 56% -243%;
     }
 
     .calculaTuAmor {
@@ -118,11 +179,11 @@ html body {
         margin: 90px auto;
         height: 156px;
         display: grid;
-        grid-template-columns: repeat(7, 1fr);
+        grid-template-columns: repeat(8, 1fr);
     }
 
     #boton{
-        margin: 43px 31px 0px 0px;
+        margin: 58px 30px 0px -20px;
     }
 
     .campoObligatorio{
