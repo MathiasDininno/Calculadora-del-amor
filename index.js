@@ -52,8 +52,8 @@ function ocultar() {
 }
 
 function mostrar() {
-    document.getElementById("ocultos").style.display = "block"
     document.getElementById("container").style.display = "none"
+    document.getElementById("ocultos").style.display = "block"
 }
 
 function cambiarFondo(porcentaje) {
@@ -69,8 +69,10 @@ function cambiarFondo(porcentaje) {
 }
 
 function volver() {
-   
-    
+    ocultar()
+    document.getElementById("corazonAzul").style.display = ("none")
+    document.getElementById("corazonRosa").style.display = ("none")
+    document.querySelector("html").style.backgroundImage = "none"
 }
 
 function parametros(nombre) {
